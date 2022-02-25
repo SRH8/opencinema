@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="opencinema.list">
+      <field name="name">opencinema list</field>
+      <field name="model">opencinema.opencinema</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="opencinema.action_window">
+      <field name="name">opencinema window</field>
+      <field name="res_model">opencinema.opencinema</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="opencinema.action_server">
+      <field name="name">opencinema server</field>
+      <field name="model_id" ref="model_opencinema_opencinema"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="opencinema" id="opencinema.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="opencinema.menu_1" parent="opencinema.menu_root"/>
+    <menuitem name="Menu 2" id="opencinema.menu_2" parent="opencinema.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="opencinema.menu_1_list" parent="opencinema.menu_1"
+              action="opencinema.action_window"/>
+    <menuitem name="Server to list" id="opencinema" parent="opencinema.menu_2"
+              action="opencinema.action_server"/>
+-->
+  </data>
+</odoo>
