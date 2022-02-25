@@ -3,14 +3,14 @@
     'name': "opencinema",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        Almacena datos de peículas.
+        """,
 
     'description': """
-        Long description of module's purpose
+       Este módulo permite almacenar datos de las películas que van pasando por cartelera. Permite guardar el título, la descripción y el año de estreno.
     """,
 
-    'author': "My Company",
+    'author': "Sergio Fraga",
     'website': "http://www.yourcompany.com",
 
     # Categories can be used to filter modules in modules listing
@@ -24,12 +24,13 @@
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
+        'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
+        'security/security.xml',
     ],
     # only loaded in demonstration mode
-    'demo': [
-        'demo/demo.xml',
-    ],
+    #'demo': [
+     #   'demo/demo.xml',
+    #],
 }
