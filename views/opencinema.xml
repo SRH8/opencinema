@@ -11,6 +11,57 @@
             </field>
         </record>
 
+<record model="ir.ui.view" id="film_tree_view">
+        <field name="name">film.tree</field>
+        <field name="model">opencinema.film</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="release_date"></field>
+                <field name="duration"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="film_search_view">
+        <field name="name">film.search</field>
+        <field name="model">opencinema.film</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="release_date"/>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="film_form_view">
+        <field name="name">film.form</field>
+        <field name="model">opencinema.film</field>
+        <field name="arch" type="xml">
+            <form string="Film Form">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                    <notebook>
+                        <page string="Data">
+                            <field name="name"/>
+                            <field name="release_date"/>
+                            <field name="duration"/>
+                        </page>
+                        <page string="Description">
+                            <field name="description"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+
+
+
         <menuitem id="main_opencinema_menu" name="Open Cinema" web_icon="opencinema,static/description/icon_opencinema.png"/>
       
         <menuitem id="opencinema_menu" name="Open Cinema"
