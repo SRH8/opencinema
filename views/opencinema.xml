@@ -11,7 +11,7 @@
             </field>
         </record>
 
-        <menuitem id="main_opencinema_menu" name="Open Cinema" web_icon="opencinema,static/description/icon_opencinema.png" />
+        <menuitem id="main_opencinema_menu" name="Open Cinema" web_icon="opencinema,static/description/icon_opencinema.png"/>
       
         <menuitem id="opencinema_menu" name="Open Cinema"
                   parent="main_opencinema_menu"/>
