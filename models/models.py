@@ -8,3 +8,5 @@ class Film(models.Model):
 
     name = fields.Char(string="Title", required=True)
     description = fields.Text()
+    duration = fields.Integer()
+    release_date = fields.Char(string="Release date")
