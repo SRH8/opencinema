@@ -7,6 +7,6 @@ class Film(models.Model):
     _description = "OpenCinema Films"
 
     name = fields.Char(string="Title", required=True)
-    description = fields.Text(string="Description")
-    duration = fields.Integer(sting="Duration")
-    release_date = fields.Char(string="Release date")
+    description = fields.Text()
+    release_date = fields.Date(string='Release date')
+    duration = fields.Integer(string="Duration")
