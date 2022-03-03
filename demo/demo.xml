@@ -1,26 +1,26 @@
 <odoo>
     <data>
-          <record id="movie0" model="opencinema.opencinema">
+          <record id="movie0" model="opencinema.film">
             <field name="name">Película 0</field>
             <field name="description">Descripción 0</field>
           </record>
 
-          <record id="movie1" model="opencinema.opencinema">
+          <record id="movie1" model="opencinema.film">
             <field name="name">Película 1</field>
             <field name="description">Descripción 1</field>
           </record>
 
-          <record id="movie2" model="opencinema.opencinema">
+          <record id="movie2" model="opencinema.film">
             <field name="name">Película 2</field>
             <field name="description">Descripción 2</field>
           </record>
 
-          <record id="movie3" model="opencinema.opencinema">
+          <record id="movie3" model="opencinema.film">
             <field name="name">Película 3</field>
             <field name="description">Descripción 3</field>
           </record>
 
-          <record id="movie4" model="opencinema.opencinema">
+          <record id="movie4" model="opencinema.film">
             <field name="name">Película 4</field>
             <field name="description">Descripción 4</field>
           </record>
