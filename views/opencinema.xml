@@ -60,7 +60,11 @@
     </record>
 
 
-
+    <record model="ir.actions.act_window" id="director_list_action">
+        <field name="name">Directors</field>
+        <field name="res_model">opencinema.director</field>
+        <field name="view_mode">tree,form</field>
+    </record>
 
 
         <menuitem id="main_opencinema_menu" name="Open Cinema" web_icon="opencinema,static/description/icon_opencinema.png"/>
@@ -70,5 +74,9 @@
      
         <menuitem id="films_menu" name="Films" parent="opencinema_menu"
                   action="film_list_action"/>
+
+        <menuitem id="director_menu" name="Directors"
+                  parent="opencinema_menu"
+                  action="session_list_action"/>
       
 </odoo>
