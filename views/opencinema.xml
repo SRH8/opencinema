@@ -77,6 +77,6 @@
 
         <menuitem id="director_menu" name="Directors"
                   parent="opencinema_menu"
-                  action="session_list_action"/>
+                  action="director_list_action"/>
       
 </odoo>

@@ -12,9 +12,9 @@ class Film(models.Model):
     release_date = fields.Char(string="Release date")
     
     
-    class Director(models.Model):
-        _name = 'opencinema.director'
-        _description = "OpenCinema Directors"
+class Director(models.Model):
+    _name = 'opencinema.director'
+    _description = "OpenCinema Directors"
         
-        name = fields.Char(string="Name", required=True)
-        nationality = fields.Char(string="Nationality")
+    name = fields.Char(string="Name", required=True)
+    nationality = fields.Char(string="Nationality")
