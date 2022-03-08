@@ -39,21 +39,22 @@
         <field name="model">opencinema.film</field>
         <field name="arch" type="xml">
             <form string="Film Form">
-                <sheet>
-                    <group>
-                        <field name="name"/>
-                    </group>
+            <sheet>
+                <group>
+                    <field name="name"/>
                     <notebook>
                         <page string="Data">
-                            <field name="name"/>
-                            <field name="release_date"/>
-                            <field name="duration"/>
-                        </page>
-                        <page string="Description">
+                            <group> 
+                                <field name="release_date"/>
+                                <field name="duration"/>
+                            </group>
+                         </page>
+                         <page string="Description">
                             <field name="description"/>
-                        </page>
-                    </notebook>
-                </sheet>
+                         </page>               
+                    </notebook>      
+                </group>
+            </sheet>
             </form>
         </field>
     </record>
